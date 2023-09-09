@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/pos_personalizado.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <title>POST | GALOTECH</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <nav class="nav">
+                <div class="content__nav">
+
+                    <div class="nav__home">
+                        <a href="#">
+                            <span><i class="fa-solid fa-circle-arrow-left"></i></span>
+                            Regresar al inicio
+                        </a>
+                    </div>
+
+                    <div class="nav__usurario__detalles">                        
+                        <p><span><i class="fa-solid fa-circle-user"></i></span> <span>Cajero </span> | <span>Jhon Doe</span> </p>
+                    </div>
+                    <div class="nav__funciones__caja">
+                        <div class="funciones__caja__botones">
+                            <button class="btn"><span><i class="fa-solid fa-cash-register"></i></span>Ingresos / Egresos</button>
+                            <button class="btn"><span><i class="fa-solid fa-receipt"></i></span>Ventas pendientes</button>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+        </header>        
+
+        <section class="tab__container ">
+            <div class="tab__box">
+                <button class="tab__btn active"><span><i class="fa-solid fa-basket-shopping"></i></span> venta directa </button>
+                <button class="tab__btn"><span><i class="fa-solid fa-piggy-bank"></i></span> Resumen del día</button>
+                <button class="tab__btn"><span><i class="fa-solid fa-door-open"></i></span> turnos</button>
+            </div>
+
+            <div class="content__tab">
+                <div class="content active">
+                    <div class="content__tab__1">                        
+                        <div class="box__products">
+                            <!-- Buscador y filtro -->
+                            <div class="box__products__funciones">
+                                <div class="box__products__funciones__content">
+                                    <div class="box__funciones__content__search">
+                                        <div class="funciones__content__search">
+                                            <button class="box__products__btn__search  reset"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+                                            <input type="text" class="box__products__search" placeholder="Buscar producto..." autofocus="autofocus" >
+                                        </div>
+                                        <div class="funciones__content__btn">
+                                            <button class="reset"><span><i class="fa-solid fa-arrows-rotate"></i></span></button>
+                                            <button class="reset"><span><i class="fa-solid fa-barcode"></i></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="box__funciones__content__category">
+                                        <div class="dropdown reset box__funciones__content__category__dropdown">
+                                            <button class="reset dropdown-toggle dropdown__toggle__desk" type="button" id="category-products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Categoria
+                                            </button>                                            
+                                            <button class="reset dropdown__toggle__mobil" type="button" id="category-products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span ><i class="fa-solid fa-sliders"></i></span>                                                
+                                            </button>                                            
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-overflow" aria-labelledby="category-products">
+                                                    <button class="dropdown-item" type="button">Zapatillas</button>
+                                                    <button class="dropdown-item" type="button">Buzos</button>
+                                                    <button class="dropdown-item" type="button">Shors</button>
+                                                    <button class="dropdown-item" type="button">Pantalones</button>
+                                                    <button class="dropdown-item" type="button">Zandalias</button>
+                                                    <button class="dropdown-item" type="button">Casacas</button>
+                                                    <button class="dropdown-item" type="button">Camisetas</button>
+                                                    <button class="dropdown-item" type="button">Licras</button>
+                                                                                             
+                                                </div>                                            
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box__products__galery">
+                                <div class="box__products__galery__content__overflow">
+                                    <!-- Caja de productos -->
+                                    <div class="box__products__galery__content">
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2bcc7b3fc0164b349f5aaed201048fe1_9366/Zapatillas_Fluidflow_2.0_Azul_GW4012_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS FLUIDFLOW 2.0</p>
+                                                        <p>s/245.00</p>                                                        
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <!-- Modal del producto-->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Seleccione unidad de precio</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <!-- Box Presentaciones productos -->
+                                                            <p>Prentaciones<span>*</span></p>
+                                                            <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons" style="display: flex; flex-wrap: wrap; flex-grow: 4;">                                                            
+                                                                <label class="present__product btn btn-lg rounded  btn-accion active">
+                                                                    <input type="radio" name="options" id="option1" checked>
+                                                                    <i class="fa-solid fa-box-open"></i></i>
+                                                                    <span class="title-sucursal">Unidad X1 - General</span>                        
+                                                                    <span class="title-sucursal">Stock - 130</span>                        
+                                                                </label>                                                                                                                                                    
+                                                                <label class="present__product btn btn-lg rounded  btn-accion active">
+                                                                    <input type="radio" name="options" id="option1" checked>
+                                                                    <i class="fa-solid fa-box-open"></i></i>
+                                                                    <span class="title-sucursal">Unidad General X1 - Mayor</span>                        
+                                                                </label>                                                                                                                                                    
+                                                                <label class="present__product btn btn-primary btn-lg rounded  btn-accion active">
+                                                                    <input type="radio" name="options" id="option1" checked>
+                                                                    <i class="fa-solid fa-box-open"></i></i>
+                                                                <span class="title-sucursal">Caja X12</span>                        
+                                                                </label>                                                                                                                                                                                                                
+                                                            </div>
+                                                            <!-- Box precios productos -->
+                                                            <p>Precios<span>*</span></p>
+                                                            <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons" style="display: flex; flex-wrap: wrap; flex-grow: 4;">                                                            
+                                                                <label class="btn btn-primary btn-lg rounded  btn-accion active">
+                                                                <input type="radio" name="options" id="option1" checked>
+                                                                <i class="fa-solid fa-box-open"></i></i>
+                                                                <span class="title-sucursal">Chiclayo</span>                        
+                                                                </label>                                                                                                                                                    
+                                                                <label class="btn btn-primary btn-lg rounded  btn-accion active">
+                                                                <input type="radio" name="options" id="option1" checked>
+                                                                <i class="fa-solid fa-box-open"></i></i>
+                                                                <span class="title-sucursal">Chiclayo</span>                        
+                                                                </label>                                                                                                                                                                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                          
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a7b38ee1fc094d108b5884215b917fce_9366/Zapatillas_de_Running_Switch_Move_Azul_ID5250_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS DE RUNNING SWITCH MOVE</p>
+                                                        <p>s/299.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0fbed4646c1d46e0aae0af6901301ff4_9366/Zapatillas_Ultraboost_Light_Blanco_HQ6351_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS ULTRABOOST LIGHT 23</p>
+                                                        <p>s/699.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d3694d93d5034990a2b2af9000e5a8ce_9366/Zapatillas_NMD_R1_Negro_HQ4461_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS NMD_R1</p>
+                                                        <p>s/265.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5b5ff3e2e76b4fa99963af3a00a43559_9366/Zapatillas_Solarcontrol_Plomo_HP5794_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS SOLARCONTROL</p>
+                                                        <p>s/413.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4896bd57f0894845b5c0ae8300eec549_9366/Zapatillas_adidas_Grand_Court_Cloudfoam_Comfort_Blanco_GW9195_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS ADIDAS GRAND COURT CLOUDFOAM COMFORT</p>
+                                                        <p>s/360.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a6a5259b2684d2b812ead1601405b03_9366/Zapatillas_Lite_Racer_CLN_2.0_Azul_GZ2812_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS SOLARCONTROL</p>
+                                                        <p>s/325.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0846e90b15144861b33dacf500e3cfd1_9366/Zapatillas_Kaptir_2.0_Blanco_H00276_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS KAPTIR 2.0</p>
+                                                        <p>s/325.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b531c2c85ad44c2b841caf8e013ea21c_9366/Zapatillas_NMD_V3_Marron_FZ6496_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS NMD_V3</p>
+                                                        <p>s/399.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ffe40fe134fe425cb77fafcb01190d8c_9366/Zapatillas_Forum_Low_Blanco_IE7175_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS FORUM LOWL</p>
+                                                        <p>s/429.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3a0f256718fb467085cbae2a011d7d37_9366/Zapatillas_Pureboost_22_Azul_GW9151_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS PUREBOOST 22</p>
+                                                        <p>s/356.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5b5ff3e2e76b4fa99963af3a00a43559_9366/Zapatillas_Solarcontrol_Plomo_HP5794_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS SOLARCONTROL</p>
+                                                        <p>s/413.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4896bd57f0894845b5c0ae8300eec549_9366/Zapatillas_adidas_Grand_Court_Cloudfoam_Comfort_Blanco_GW9195_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS ADIDAS GRAND COURT CLOUDFOAM COMFORT</p>
+                                                        <p>s/290.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a6a5259b2684d2b812ead1601405b03_9366/Zapatillas_Lite_Racer_CLN_2.0_Azul_GZ2812_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS SOLARCONTROL</p>
+                                                        <p>s/325.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0846e90b15144861b33dacf500e3cfd1_9366/Zapatillas_Kaptir_2.0_Blanco_H00276_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS KAPTIR 2.0</p>
+                                                        <p>s/325.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d3694d93d5034990a2b2af9000e5a8ce_9366/Zapatillas_NMD_R1_Negro_HQ4461_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS NMD_R1</p>
+                                                        <p>s/265.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b531c2c85ad44c2b841caf8e013ea21c_9366/Zapatillas_NMD_V3_Marron_FZ6496_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS NMD_V3</p>
+                                                        <p>s/399.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ffe40fe134fe425cb77fafcb01190d8c_9366/Zapatillas_Forum_Low_Blanco_IE7175_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS FORUM LOWL</p>
+                                                        <p>s/429.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b531c2c85ad44c2b841caf8e013ea21c_9366/Zapatillas_NMD_V3_Marron_FZ6496_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS NMD_V3</p>
+                                                        <p>s/399.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ffe40fe134fe425cb77fafcb01190d8c_9366/Zapatillas_Forum_Low_Blanco_IE7175_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS FORUM LOWL</p>
+                                                        <p>s/429.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                            <button type="button" class="box__product__btn reset" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="box__item__product">
+                                                    <figure class="item__product__image">
+                                                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d3694d93d5034990a2b2af9000e5a8ce_9366/Zapatillas_NMD_R1_Negro_HQ4461_01_standard.jpg" alt="">
+                                                        <span>0022993355</span>
+                                                    </figure>
+                                                    <div class="item__product__text">
+                                                        <p>ZAPATILLAS NMD_R1</p>
+                                                        <p>s/265.00</p>   
+                                                    </div>                                                    
+                                                </div>
+                                            </button>
+                                                                            
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box__list">
+                            <div>
+                                <div class="box__list_content">
+                                    <div class="box__list_title">
+                                        <span>Lista de productos</span>
+                                        <button>vaciar productos</button>
+                                    </div>
+                                </div>
+                                <div class="box__list__items">
+                                    <div class="box__item">
+                                        <!-- inicio stilos de item -->
+                                        <div class="box__item__content">
+                                            <button class="item__content__btn"><span><i class="fa-solid fa-trash-can"></i></span></button>
+                                            <div class="item__content__details">
+                                                <div>
+                                                    <p data-toggle="tooltip" title="ZAPATILLAS FLUIDFLOW 2.0">ZAPATILLAS FLUIDFLOW 2.0</p>                                                                                                       
+                                                    <p class="box__price"><label>S/</label><input class="item__price reset__input" value="245" maxlength="4" type="text"></p>
+                                                </div>
+                                            </div>
+                                            <div class="item__content__count">
+                                                
+                                                    <button class="count__btn__less"><span><i class="fa-solid fa-circle-minus"></i></span></button>
+                                                    <span class="box__count"><input class="item__count reset__input" type="text" placeholder="2" maxlength="3"></span>
+                                                    <button class="count__btn__more"><span><i class="fa-solid fa-circle-plus"></i></span></button>
+                                                
+                                            </div>
+                                            <p class="item__content__subtotal">S/<span>490</span></p>
+                                        </div>
+                                        <div class="box__item__content">
+                                            <button class="item__content__btn"><span><i class="fa-solid fa-trash-can"></i></span></button>
+                                            <div class="item__content__details">
+                                                <div>
+                                                    <p data-toggle="tooltip" title="ZAPATILLAS FLUIDFLOW 2.0">Zapatillas FluidFlow 2.0</p>                                                                                                       
+                                                    <p class="box__price"><label>S/</label><input class="item__price reset__input" value="245" maxlength="4" type="text"></p>
+                                                </div>
+                                            </div>
+                                            <div class="item__content__count">
+                                                
+                                                    <button class="count__btn__less"><span><i class="fa-solid fa-circle-minus"></i></span></button>
+                                                    <span class="box__count"><input class="item__count reset__input" type="text" placeholder="2" maxlength="3"></span>
+                                                    <button class="count__btn__more"><span><i class="fa-solid fa-circle-plus"></i></span></button>
+                                                
+                                            </div>
+                                            <p class="item__content__subtotal">S/<span>490</span></p>
+                                        </div>
+                                        <!-- fin stilos de item -->
+
+                                        <!-- inicio stilos de item -->
+                                        <div class="box__item__content">
+                                            <button class="item__content__btn"><span><i class="fa-solid fa-trash-can"></i></span></button>
+                                            <div class="item__content__details">
+                                                <div>
+                                                    <p data-toggle="tooltip" title="ZAPATILLAS DE RUNNING SWITCH MOVE ZAPATILLAS DE RUNNING SWITCH MOVE">ZAPATILLAS DE RUNNING SWITCH MOVE ZAPATILLAS DE RUNNING SWITCH MOVE</p>                                            
+                                                    <p class="box__price"><label>S/</label><input class="item__price reset__input" value="299" maxlength="4" type="text"></p>
+                                                </div>
+                                            </div>
+                                            <div class="item__content__count">
+                                                
+                                                    <button class="count__btn__less"><span><i class="fa-solid fa-circle-minus"></i></span></button>
+                                                    <span class="box__count"><input class="item__count reset__input" type="text" placeholder="1" maxlength="3"></span>
+                                                    <button class="count__btn__more"><span><i class="fa-solid fa-circle-plus"></i></span></button>
+                                                
+                                            </div>
+                                            <p class="item__content__subtotal">S/<span>299</span></p>
+                                        </div>
+                                        <!-- fin stilos de item -->
+                                        <!-- inicio stilos de item -->
+                                        <div class="box__item__content">
+                                            <button class="item__content__btn"><span><i class="fa-solid fa-trash-can"></i></span></button>
+                                            <div class="item__content__details">
+                                                <div>
+                                                    <p data-toggle="tooltip" title="ZAPATILLAS SOLARCONTROL">ZAPATILLAS SOLARCONTROL</p>                                            
+                                                    <p class="box__price"><label>S/</label><input class="item__price reset__input" value="413" maxlength="4" type="text"></p>
+                                                </div>
+                                            </div>
+                                            <div class="item__content__count">
+                                                
+                                                    <button class="count__btn__less"><span><i class="fa-solid fa-circle-minus"></i></span></button>
+                                                    <span class="box__count"><input class="item__count reset__input" type="text" placeholder="1" maxlength="3"></span>
+                                                    <button class="count__btn__more"><span><i class="fa-solid fa-circle-plus"></i></span></button>
+                                                
+                                            </div>
+                                            <p class="item__content__subtotal">S/<span>413</span></p>
+                                        </div>
+                                        <!-- fin stilos de item -->
+                                        <!-- inicio stilos de item -->
+                                        <div class="box__item__content">
+                                            <button class="item__content__btn"><span><i class="fa-solid fa-trash-can"></i></span></button>
+                                            <div class="item__content__details">
+                                                <div>
+                                                    <p data-toggle="tooltip" title="ZAPATILLAS ULTRABOOST LIGHT 23">ZAPATILLAS ULTRABOOST LIGHT 23</p>                                            
+                                                    <p class="box__price"><label>S/</label><input class="item__price reset__input" value="699" maxlength="4" type="text"></p>
+                                                </div>
+                                            </div>
+                                            <div class="item__content__count">
+                                                
+                                                    <button class="count__btn__less"><span><i class="fa-solid fa-circle-minus"></i></span></button>
+                                                    <span class="box__count"><input class="item__count reset__input" type="text" placeholder="1" maxlength="3"></span>
+                                                    <button class="count__btn__more"><span><i class="fa-solid fa-circle-plus"></i></span></button>
+                                                
+                                            </div>
+                                            <p class="item__content__subtotal">S/<span>699</span></p>
+                                        </div>
+                                        <!-- fin stilos de item -->
+                                        <!-- inicio stilos de item -->
+                                        <div class="box__item__content">
+                                            <button class="item__content__btn"><span><i class="fa-solid fa-trash-can"></i></span></button>
+                                            <div class="item__content__details">
+                                                <div>
+                                                    <p data-toggle="tooltip" title="ZAPATILLAS NMD_R1">ZAPATILLAS NMD_R1</p>                                            
+                                                    <p class="box__price"><label>S/</label><input class="item__price reset__input" value="25" maxlength="4" type="text"></p>
+                                                </div>
+                                            </div>
+                                            <div class="item__content__count">
+                                                
+                                                    <button class="count__btn__less"><span><i class="fa-solid fa-circle-minus"></i></span></button>
+                                                    <span class="box__count"><input class="item__count reset__input" type="text" placeholder="1" maxlength="3"></span>
+                                                    <button class="count__btn__more"><span><i class="fa-solid fa-circle-plus"></i></span></button>
+                                                
+                                            </div>
+                                            <p class="item__content__subtotal">S/<span>265</span></p>
+                                        </div>
+                                        <!-- fin stilos de item -->
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="box__list__payme" >
+                                    <div class="list__payme__content">
+                                        <p>Subtotal: S/<span>1200.42</span></p>
+                                        <p>IGV: S/<span>390.52</span></p>
+                                        <p>Total a pagar S/<span>1380.00</span></p>
+                                    </div>
+                                </div>
+                                <div class="box__btn__procesar">
+                            
+                                        <label for="btn-procesar">
+                                            <span><i class="fa-solid fa-cart-shopping"></i></span>Procesar productos
+                                        </label>   
+
+                                </div>
+                                <div class="container__box__procesar">
+                                    <input type="checkbox" id="btn-procesar">
+                                    <div class="container__box__procesar__lista">
+                                        <div class="box__procesar__lista__venta">
+                                            <label for="btn-procesar"><span><i class="fa-solid fa-circle-arrow-left"></i></span>Regresar a la lista de productos</label>
+                                            <div class="procesar__lista__content">
+                                                <div class="procesar__lista__content__title">
+                                                    <p>Procesar Venta</p>
+                                                    <label for="">
+                                                        <span><input type="checkbox"> </span>
+                                                        <span>Nota de venta</span>
+                                                    </label>                                                    
+                                                    
+                                                </div>
+                                                <div class="procesar__lista__content__datos">
+                                                    <h4>probando </h4>
+                                                    <h4>probando </h4>
+                                                    <h4>probando </h4>
+                                                    <h4>probando </h4>
+                                                </div>
+                                                <div class="box__btn__procesar__venta">
+                                                    <div class="btn__procesar__venta">
+                                                        <label for="btn-procesar">Procesar venta</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                   
+                                    </div>
+                                    <div class="capa"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__tab__2  content ">
+                    <div class="content__tab__1">                        
+                        <div class="box__resumen__dia">
+                            <div class="div">
+                                <div class="box__resumen__dia__content">
+                                    <div class="resumen__dia__content__detalles">
+                                        <h4>Movimientos</h4>
+                                        <p class="venta__resumen__title"><span class="ico__venta__resumen"><i class="fa-solid fa-chart-line"></i></span> Venta totales <span class="total__venta__resumen">S/ 1785.20</span></p>
+                                    </div>
+                                </div>
+                                <div class="resumen__dia__content__list__ventas">
+                                    <p>Ventas del turno</p>
+                                    <p>Ingresos/Egresos</p>                                    
+                                </div>
+                            </div>
+                            <div class="div">                                
+                                <div class="box__resumen__dia__footer">
+                                    <div class="resumen__dia__footer__content">
+                                        <p class="cerrar__sesion"><span><i class="fa-solid fa-key"></i></span><span> S/ 1785.20</span></p>                                        
+                                        <!-- Dropdown -->
+                                        <div class="box__resumen__report">
+                                            <div class="dropdown reset box__funciones__content__category__dropdown">
+                                                <button class="reset dropdown-toggle dropdown__toggle__report" type="button" id="box__resumen__report__download" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Descargar Reporte
+                                                </button>                                                                                                                                      
+                                                    <div class="dropdown-menu dropdown-menu-right dropdown-report-overflow" aria-labelledby="box__resumen__report__download">
+                                                        <button class="dropdown-item" type="button">PDF</button>
+                                                        <button class="dropdown-item" type="button">EXCEL</button>                                                                                                                                                         
+                                                    </div>                                            
+                                              </div>
+                                        </div>
+                                        <!-- Dropdown -->
+                                    </div>
+                                </div>                                
+
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="content__tab__3 content">
+                    <div class="content__tab__1">                        
+                        <div class="box__resumen__dia">
+                            <div class="div">
+                                <div class="box__resumen__dia__content">
+                                    <div class="resumen__dia__content__detalles">
+                                        <h4>Gestión de turnos</h4>
+                                        <p class="cerrar__sesion"><span><i class="fa-solid fa-key"></i></span><span>Cerrar turno</span></p>  
+                                    </div>
+                                </div>
+                                <div class="resumen__dia__content__list__ventas">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <p>Lorem ipsum dolor sit amet.</p>                                    
+                                </div>
+                            </div>
+                            
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script> 
+        const tabs= document.querySelectorAll('.tab__btn');
+        const all_content= document.querySelectorAll('.content');
+
+        tabs.forEach((tab, index)=>{
+            tab.addEventListener('click',(e)=>{
+                tabs.forEach(tab=>{tab.classList.remove('active')})
+                tab.classList.add('active');
+
+                all_content.forEach(content=>{content.classList.remove('active')})
+                all_content[index].classList.add('active');
+            });
+        })
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
